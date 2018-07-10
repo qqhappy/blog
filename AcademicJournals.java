@@ -77,9 +77,8 @@ public class AcademicJournals implements PageProcessor{
 			try {
 				String sName = URLDecoder.decode("%" + String.format("%02x", intArr[i]), "UTF-8");
 				authorName = authorName + sName;
-			} catch (UnsupportedEncodingException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+			} catch (IOException e1) {
+
 			}
 		}
 
